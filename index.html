@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harneet Sahi Dev</title>
+
+    <!-- Font Rammetto, Montserrat, Roboto, DM Serif Text-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./dist/main.css" />
+  </head>
+  <body>
+  
+  <!-- First page -->
+    <section class="container"  id="home">
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="navbar__header">
+          <p class="logo">H &#8212 S</p>
+          <button class="navbar__header--toggle nav-toggle-js">
+            <i class="fa fa-bars menu-btn"></i>
+          </button>
+        </div>
+        
+        <!-- sidebar -->
+        <aside class="navbar__sidebar sidebar-js">
+          <button class="navbar__sidebar--close close-sidebar-js">
+            <i class="fa fa-times close-btn"></i>
+          </button>
+          <ul class="navbar__sidebar--links">
+            <li class="sidebar-links-js"> <a href="#home">Home</a> </li>
+            <li class="sidebar-links-js"> <a href="#">Resume</a> </li>
+            <li class="sidebar-links-js" > <a href="#">About</a></li>
+            <li class="sidebar-links-js"> <a href="#">Contact</a></li>
+          </ul>
+        </aside>
+      </nav>
+
+      <!-- main content of landing page -->
+      <main class="main">
+        <div class="main__intro">
+          <h1 class="main__intro--greeting">Hi, I'm <br> <span class="main__intro--name">Harneet</span></h1>
+          <h3 class="main__intro--occupation">Frontend web developer <br>based in canada</h3>
+          
+        </div>
+        <div class="main__pic">
+          <img src="./assets/person.jpg" alt="" class="main__pic--profile">
+        </div>
+      </main>
+    </section>
+
+  <!-- Portfolio page -->
+    <section class="portfolio">
+      <h1 class="portfolio__heading">Portfolio</h1>
+      <div class="portfolio__projects">
+        <article class="portfolio__projects--block">
+          <div class="portfolio__projects--image">
+            <img src="./assets/projects/Menu Desktop Preview.png" alt="">
+          </div>
+          <div class="portfolio__projects--content">
+            <div class="portfolio__projects--text">  
+              <h4 class="portfolio__projects--heading">restaurant menu</h4>
+              <p class="portfolio__projects--description">This application does blah blah bleh and then meh beh moo. You can pick colors and use them wherever and this is basically a short description.</p>
+          </div>
+            <ul class="portfolio__projects--links">
+              <li>
+                <img class="icon" src="./assets/icons/globe.svg" alt="">
+                <a href="#">live</a></li>
+              <li>
+                <img class="icon" src="./assets/icons/git.svg" alt="">
+                <a href="#">code</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="portfolio__projects--block">
+          <div class="portfolio__projects--image">
+            <img src="./assets/projects/Countdown Timer Preview.jpg" alt="">
+          </div>
+          <div class="portfolio__projects--content">
+            <div class="portfolio__projects--text">  
+              <h4 class="portfolio__projects--heading">countdown timer</h4>
+              <p class="portfolio__projects--description">This application does blah blah bleh and then meh beh moo. You can pick colors and use them wherever and this is basically a short description.</p>
+            </div>
+            <ul class="portfolio__projects--links">
+              <li>
+                <img class="icon" src="./assets/icons/globe.svg" alt="">
+                <a href="#">live</a></li>
+              <li>
+                <img class="icon" src="./assets/icons/git.svg" alt="">
+                <a href="#">code</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="portfolio__projects--block">
+          <div class="portfolio__projects--image">
+            <img src="./assets/projects/Color Flipper Desktop Preview.png" alt="">
+          </div>
+          <div class="portfolio__projects--content">
+            <div class="portfolio__projects--text">
+              <h4 class="portfolio__projects--heading">color picker</h4>
+              <p class="portfolio__projects--description">This application does blah blah bleh and then meh beh moo. You can pick colors and use them wherever and this is basically a short description.</p>
+            </div>
+            <ul class="portfolio__projects--links">
+              <li>
+                <img class="icon" src="./assets/icons/globe.svg" alt="">
+                <a href="#">live</a></li>
+              <li>
+                <img class="icon" src="./assets/icons/git.svg" alt="">
+                <a href="#">code</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  
+<!-- Skills page -->
+    <section class="skills">
+      <h2 class="skills__heading">Skills</h2>
+      <div class="skills__container">
+        <div class="skills__container--block">
+          <img src="./assets/skills_logos/javascript.svg" alt="javascript logo" class="skills__icon" title="Javascript">
+        </div>
+        <div class="skills__container--block">
+          <img src="./assets/skills_logos/typescript.svg" alt="typescript logo" class="skills__icon" title="Typescript">
+        </div>
+        <div class="skills__container--block">
+          <img src="./assets/skills_logos/bootstrap.svg" alt="bootstrap logo" class="skills__icon" title="Bootstrap">
+        </div>
+        <div class="skills__container--block">
+          <img src="./assets/skills_logos/sass.svg" alt="sass logo" class="skills__icon" title="Sass">
+        </div>
+        <div class="skills__container--block">
+          <img src="./assets/skills_logos/web.svg" alt="responsive web logo" class="skills__icon" title="Responsive Web Design">
+        </div>
+        <div class="skills__container--block">
+          <img src="./assets/skills_logos/figma.svg" alt="figma logo" class="skills__icon" title="Figma">
+        </div>       
+    </div>
+    </section>
+
+<!-- Footer -->
+    <section class="footer">
+      <div class="footer__container">
+        <h3 class="footer__heading">Let's work together</h3>
+        <div class="footer__content">
+          <img src="./assets/icons/git.svg" alt="git logo" title="Git" class="footer__content--icon">
+       
+          <img src="./assets/icons/linkedin.svg" alt="linkedIn logo" title="LinkedIn" class="footer__content--icon">
+        
+          <img src="./assets/icons/mail.svg" alt="mail" title="Email" class="footer__content--icon">
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
 
