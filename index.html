@@ -17,49 +17,62 @@
     <link rel="stylesheet" href="./dist/main.css" />
   </head>
   <body>
-  
-  <!-- First page -->
-    <section class="container"  id="home">
+
+    <header id="home">
       <!-- navbar -->
       <nav class="navbar">
-        <div class="navbar__header">
-          <p class="logo">H &#8212 S</p>
-          <button class="navbar__header--toggle nav-toggle-js">
-            <i class="fa fa-bars menu-btn"></i>
-          </button>
+        <div class="navbar__content"> 
+          <a class="navbar__logo" href="./index.html">H &#8212 S</a>
+
+          <div href="#" class="navbar__toggle nav-toggle-js">
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+          </div>
+          
+          <div class="navbar__desktop-links">
+            <a class="nav-links nav-links-js" href="./index.html">Home</a>
+            <a class="nav-links nav-links-js" href="./about.html">About</a>
+            <a class="nav-links nav-links-js contact-js" href="./contact.html">Contact</a>
+          </div>
         </div>
-        
-        <!-- sidebar -->
-        <aside class="navbar__sidebar sidebar-js">
-          <button class="navbar__sidebar--close close-sidebar-js">
-            <i class="fa fa-times close-btn"></i>
-          </button>
-          <ul class="navbar__sidebar--links">
-            <li class="sidebar-links-js"> <a href="#home">Home</a> </li>
-            <li class="sidebar-links-js"> <a href="#">Resume</a> </li>
-            <li class="sidebar-links-js" > <a href="#">About</a></li>
-            <li class="sidebar-links-js"> <a href="#">Contact</a></li>
-          </ul>
-        </aside>
       </nav>
 
-      <!-- main content of landing page -->
-      <main class="main">
-        <div class="main__intro">
-          <h1 class="main__intro--greeting">Hi, I'm <br> <span class="main__intro--name">Harneet</span></h1>
-          <h3 class="main__intro--occupation">Frontend web developer <br>based in canada</h3>
-          
-        </div>
-        <div class="main__pic">
-          <img src="./assets/person.jpg" alt="" class="main__pic--profile">
-        </div>
-      </main>
-    </section>
+      <!-- sidebar -->
+      <aside class="sidebar sidebar-js">  
+          <a class="nav-links sidebar-links-js" href="./index.html">Home</a>
+          <a class="nav-links sidebar-links-js" href="./about.html">About</a>
+          <a class="nav-links sidebar-links-js contact-js" href="./contact.html">Contact</a>
+      </aside>
+      
+      
+      <!-- <div class="overlay"></div> -->
+    </header>
 
-  <!-- Portfolio page -->
-    <section class="portfolio">
-      <h1 class="portfolio__heading">Portfolio</h1>
-      <div class="portfolio__projects">
+  
+    <!-- Landing page -->
+    <section class="main">
+      <div class="main__intro">
+        <h1 class="main__intro--greeting">Hi, I'm <br> <span class="main__intro--name">Harneet</span></h1>
+        <h3 class="main__intro--occupation">Frontend web developer <br>based in canada</h3>
+        <!-- <button class="main__intro--resume"> -->
+          <a href="./Harneet Sahi Resume.pdf" target="_blank" class="main__intro--resume"> Open Resume</a>
+        <!-- </button>           -->
+      </div>
+      <div class="main__pic">
+        <img src="./assets/person.jpg" alt="" class="main__pic--profile">
+      </div>
+    </section>
+    
+
+    <!-- Portfolio page -->
+    <section class="portfolio container-format">
+      <div class="portfolio__heading heading-format">
+        <span class="line line-format"></span>
+        <h2>Projects</h2>
+        <span class="line line-format"></span>
+      </div>
+      <div class="portfolio__projects">        
         <article class="portfolio__projects--block">
           <div class="portfolio__projects--image">
             <img src="./assets/projects/Menu Desktop Preview.png" alt="">
@@ -68,7 +81,7 @@
             <div class="portfolio__projects--text">  
               <h4 class="portfolio__projects--heading">restaurant menu</h4>
               <p class="portfolio__projects--description">This application does blah blah bleh and then meh beh moo. You can pick colors and use them wherever and this is basically a short description.</p>
-          </div>
+            </div>
             <ul class="portfolio__projects--links">
               <li>
                 <img class="icon" src="./assets/icons/globe.svg" alt="">
@@ -87,7 +100,9 @@
           <div class="portfolio__projects--content">
             <div class="portfolio__projects--text">  
               <h4 class="portfolio__projects--heading">countdown timer</h4>
-              <p class="portfolio__projects--description">This application does blah blah bleh and then meh beh moo. You can pick colors and use them wherever and this is basically a short description.</p>
+              <p class="portfolio__projects--description">This application does blah blah bleh and then meh beh moo. You can pick colors and use them wherever and this is basically a short description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut iste asperiores eligendi autem repudiandae aperiam dolores praesentium exercitationem quaerat.
+              
+              </p>
             </div>
             <ul class="portfolio__projects--links">
               <li>
@@ -122,59 +137,71 @@
       </div>
     </section>
   
-<!-- Skills page -->
-    <section class="skills">
-      <h2 class="skills__heading">Skills</h2>
-      <div class="skills__container development__container">
-        <h3 class="skills__container--heading">Development</h3>
-        <div class="skills__container--content">
-          <div class="skills__container--block">
-            <img src="./assets/skills_logos/javascript.svg" alt="javascript logo" class="skills__icon" title="Javascript">
-          </div>
-          <div class="skills__container--block">
-            <img src="./assets/skills_logos/typescript.svg" alt="typescript logo" class="skills__icon" title="Typescript">
-          </div>
-          <div class="skills__container--block">
-            <img src="./assets/skills_logos/bootstrap.svg" alt="bootstrap logo" class="skills__icon" title="Bootstrap">
-          </div>
-          <div class="skills__container--block">
-            <img src="./assets/skills_logos/sass.svg" alt="sass logo" class="skills__icon" title="Sass">
-          </div>
-          <div class="skills__container--block">
-            <img src="./assets/skills_logos/web.svg" alt="responsive web logo" class="skills__icon" title="Responsive Web Layout">
-          </div>   
-        </div>  
+    <!-- Skills page -->
+    <section class="skills container-format">
+      <div class="skills__heading heading-format">
+        <span class="line line-format"></span>
+        <h2>Skills</h2>
+        <span class="line line-format"></span>
       </div>
-      
-      <div class="skills__container">
-        <h3 class="skills__container--heading">Design</h3>
-        <div class="skills__container--content">
-          <div class="skills__container--block">
-            <img src="./assets/skills_logos/illustrator.svg" alt="adobe illustrator logo" class="skills__icon" title="Adobe Illustrator">
+      <div class="skills__content">
+        <div class="skills__container development__container">
+          <h3 class="skills__container--heading">Coding</h3>
+          <div class="skills__container--content">
+            <div class="skills__container--block">
+              <img src="./assets/skills_logos/javascript.svg" alt="javascript logo" class="skills__icon" title="Javascript">
+            </div>
+            <div class="skills__container--block">
+              <img src="./assets/skills_logos/typescript.svg" alt="typescript logo" class="skills__icon" title="Typescript">
+            </div>
+            <div class="skills__container--block">
+              <img src="./assets/skills_logos/bootstrap.svg" alt="bootstrap logo" class="skills__icon" title="Bootstrap">
+            </div>
+            <div class="skills__container--block">
+              <img src="./assets/skills_logos/sass.svg" alt="sass logo" class="skills__icon" title="Sass">
+            </div>
+            <div class="skills__container--block">
+              <img src="./assets/skills_logos/web.svg" alt="responsive web logo" class="skills__icon" title="Responsive Web Layout">
+            </div>   
+          </div>  
+        </div>
+        <div class="skills__container">
+          <h3 class="skills__container--heading">Designing</h3>
+          <div class="skills__container--content">
+            <div class="skills__container--block">
+              <img src="./assets/skills_logos/illustrator.svg" alt="adobe illustrator logo" class="skills__icon" title="Adobe Illustrator">
+            </div>
+            <div class="skills__container--block">
+              <img src="./assets/skills_logos/photoshop.svg" alt="adobe photoshop logo" class="skills__icon" title="Adobe Photoshop">
+            </div>
+            <div class="skills__container--block">
+              <img src="./assets/skills_logos/animate.svg" alt="adobe animate logo" class="skills__icon" title="Adobe Animate">
+            </div>
+            <div class="skills__container--block">
+              <img src="./assets/skills_logos/figma.svg" alt="figma logo" class="skills__icon" title="Figma">
+            </div>       
           </div>
-          <div class="skills__container--block">
-            <img src="./assets/skills_logos/photoshop.svg" alt="adobe photoshop logo" class="skills__icon" title="Adobe Photoshop">
-          </div>
-          <div class="skills__container--block">
-            <img src="./assets/skills_logos/animate.svg" alt="adobe animate logo" class="skills__icon" title="Adobe Animate">
-          </div>
-          <div class="skills__container--block">
-            <img src="./assets/skills_logos/figma.svg" alt="figma logo" class="skills__icon" title="Figma">
-          </div>       
         </div>
       </div>
     </section>
 
-<!-- Footer -->
+
+   
+
+    <!-- Footer -->
     <section class="footer">
       <div class="footer__container">
-        <h3 class="footer__heading">Let's work together</h3>
+        <h3 class="footer__heading">Let's work together.</h3>
         <div class="footer__content">
-          <img src="./assets/icons/git.svg" alt="git logo" title="Git" class="footer__content--icon">
-       
-          <img src="./assets/icons/linkedin.svg" alt="linkedIn logo" title="LinkedIn" class="footer__content--icon">
-        
-          <img src="./assets/icons/mail.svg" alt="mail" title="Email" class="footer__content--icon">
+          <a href="#">
+            <img src="./assets/icons/git.svg" alt="git logo" title="Git" class="footer__content--icon">
+          </a>
+          <a href="#">
+            <img src="./assets/icons/linkedin.svg" alt="linkedIn logo" title="LinkedIn" class="footer__content--icon">
+          </a>
+          <a href="./contact.html">
+            <img src="./assets/icons/mail.svg" alt="mail" title="Email" class="footer__content--icon">
+          </a>
         </div>
       </div>
     </section>
@@ -182,4 +209,3 @@
     <script src="./js/app.js"></script>
   </body>
 </html>
-
