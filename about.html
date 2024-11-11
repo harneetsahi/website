@@ -1,1 +1,137 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Harneet Sahi Dev</title>
+
+    <!-- Font Rammetto, Montserrat, Roboto, DM Serif Text-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./dist/main.css" />
+
+    <!-- Email JS -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){emailjs.init({
+        publicKey: "gVCG6bw6qgHUHU3Cx",
+      });
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header id="home">
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="navbar__content"> 
+          <a class="navbar__logo" href="./index.html">H &#8212 S</a>
+
+          <div href="#" class="navbar__toggle nav-toggle-js">
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+          </div>
+          
+          <div class="navbar__desktop-links">
+            <a class="nav-links nav-links-js" href="./index.html">Home</a>
+            <a class="nav-links nav-links-js" href="./about.html">About</a>
+            <a class="nav-links nav-links-js contact-js" href="./contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- sidebar -->
+      <aside class="sidebar sidebar-js">  
+          <a class="nav-links sidebar-links-js" href="./index.html">Home</a>
+          <a class="nav-links sidebar-links-js" href="./about.html">About</a>
+          <a class="nav-links sidebar-links-js contact-js" href="./contact.html">Contact</a>
+      </aside>
+      
+      
+      <!-- <div class="overlay"></div> -->
+    </header>
+
+    <section class="about-container" id="about">
+      <article class="about">
+        <div class="about__text">
+          <h2>About</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus sequi odio est modi laudantium totam suscipit molestias minima necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui aut illum ex laboriosam et, impedit quaerat quo eius repellat quam.</p>
+        </div>
+        <div class="about__image">
+          <img src="" alt="">
+        </div>
+      </article>
+
+      <hr class="separator">
+
+      <article class="story">
+        <h3>My journey into web development</h3>
+        <p>journey Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam at, expedita eum libero quidem dignissimos neque voluptatibus consequatur tempora debitis, doloremque omnis illum reiciendis error quaerat provident iure quibusdam.
+        </p>
+        <p>journey Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam at, expedita eum libero quidem dignissimos neque voluptatibus consequatur tempora debitis, doloremque omnis illum reiciendis error quaerat provident iure quibusdam.
+        </p>
+        <p>journey Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam at, expedita eum libero quidem dignissimos neque voluptatibus consequatur tempora debitis, doloremque omnis illum reiciendis error quaerat provident iure quibusdam.
+        </p>
+        <p>
+        accusamus repellendus perspiciatis quam eligendi nisi iure voluptatem expedita sint iste, aperiam dolores? Quae animi accusamus fugit facilis non, ipsam similique assumenda consectetur amet odio tenetur nostrum commodi inventore. Voluptatibus suscipit nulla ipsum ipsam ut totam at deleniti molestiae, nam perferendis dolor eveniet. Alias facere odio, minus dolorum animi officiis temporibus blanditiis.</p>
+      </article>
+
+      <hr class="separator">
+
+      <article class="overview">
+        <h3>Overview</h3>
+
+        <div class="overview__facts">
+          <div class="overview__facts--block">
+            <h4>Education</h4>
+            <p>blah blah</p>
+          </div>
+          <div class="overview__facts--block">
+            <h4>Something interesting</h4>
+            <p>blah blah</p>
+          </div>
+          <div class="overview__facts--block">
+            <h4>Write something here</h4>
+            <p>blah blah</p>
+          </div>
+          <div class="overview__facts--block">
+            <h4>Hobbies</h4>
+            <p>blah blah</p>
+          </div>
+        </div>
+      </article>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer">
+      <div class="footer__container">
+        <h3 class="footer__heading">Let's work together</h3>
+        <div class="footer__content">
+          <a href="#">
+            <img src="./assets/icons/git.svg" alt="git logo" title="Git" class="footer__content--icon">
+          </a>
+          <a href="#">
+            <img src="./assets/icons/linkedin.svg" alt="linkedIn logo" title="LinkedIn" class="footer__content--icon">
+          </a>
+          <a href="./contact.html">
+            <img src="./assets/icons/mail.svg" alt="mail" title="Email" class="footer__content--icon">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
