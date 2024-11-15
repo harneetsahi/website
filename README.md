@@ -1,2 +1,7 @@
-# website
-Created my portfolio website from scratch using html, sass, and javascript
+# Portfolio Website
+Created my portfolio website from scratch.
+
+# Languages
+- html
+- css sass
+- javascript
