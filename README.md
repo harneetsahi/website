@@ -5,3 +5,5 @@ Created my portfolio website from scratch.
 - html
 - css sass
 - javascript
+
+I drew all web illustrations myself using pixel and vector tools.
